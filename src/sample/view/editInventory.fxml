@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.EditInventoryController">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane fx:id="mainPane" prefHeight="266.0" prefWidth="404.0">
+            <children>
+                <Label layoutX="158.0" layoutY="14.0" text="Введите данные" />
+                <Label layoutX="50.0" layoutY="41.0" text="Код инвентаря:" />
+                <Label layoutX="50.0" layoutY="72.0" text="Наименование инвентаря:" />
+                <Label layoutX="50.0" layoutY="123.0" text="Тип инвентаря:" />
+                <TextField fx:id="inventoryNumberTextField" layoutX="203.0" layoutY="37.0" />
+                <TextField fx:id="nameInventoryTextField" layoutX="203.0" layoutY="68.0" />
+                <TextField fx:id="typeInventoryTextField" layoutX="203.0" layoutY="119.0" />
+                <Button fx:id="editButton" layoutX="85.0" layoutY="210.0" mnemonicParsing="false" text="Редактировать" />
+                <Button fx:id="cancelButton" layoutX="253.0" layoutY="210.0" mnemonicParsing="false" text="Назад" />
+
+            </children></Pane>
+    </children>
+</GridPane>

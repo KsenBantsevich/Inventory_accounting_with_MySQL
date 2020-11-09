@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AddInvoiceController">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane fx:id="mainPane" prefHeight="245.0" prefWidth="404.0">
+            <children>
+                <Label layoutX="158.0" layoutY="14.0" text="Введите данные" />
+                <Label layoutX="55.0" layoutY="60.0" text="Код накладной:" />
+                <Label layoutX="55.0" layoutY="89.0" text="Код формы:" />
+                <Label layoutX="55.0" layoutY="120.0" text="Код инвентаря:" />
+                <Label layoutX="55.0" layoutY="149.0" text="Количество инвентаря:" />
+                <TextField fx:id="invoiceNumberTextField" layoutX="203.0" layoutY="60.0" />
+                <TextField fx:id="formNumberTextField" layoutX="203.0" layoutY="90.0" />
+                <TextField fx:id="inventoryNumberTextField" layoutX="203.0" layoutY="120.0" />
+                <TextField fx:id="inventoryAmountTextField" layoutX="203.0" layoutY="149.0" />
+                <Button fx:id="addButton" layoutX="85.0" layoutY="210.0" mnemonicParsing="false" text="Добавить" />
+                <Button fx:id="cancelButton" layoutX="253.0" layoutY="210.0" mnemonicParsing="false" text="Назад" />
+
+            </children></Pane>
+    </children>
+</GridPane>

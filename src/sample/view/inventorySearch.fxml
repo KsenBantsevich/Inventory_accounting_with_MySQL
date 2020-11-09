@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.InventorySearchController">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane fx:id="mainPane" prefHeight="326.0" prefWidth="564.0">
+            <children>
+                <Label layoutX="10.0" layoutY="5.0" text="Просмотр списка инвентаря заданного типа на заданном складе и его количество на текущую дату." />
+
+                <Label layoutX="17.0" layoutY="30.0" text="Выберите склад:" />
+                <ComboBox fx:id="storageNumberComboBox" layoutX="200.0" layoutY="30.0" prefWidth="150.0" />
+
+                <Label layoutX="17.0" layoutY="63.0" text="Выберите тип инвентаря:" />
+                <ComboBox fx:id="typeInventoryComboBox" layoutX="200.0" layoutY="60.0" prefWidth="150.0" />
+
+                <Button fx:id="searchButton" layoutX="25.0" layoutY="310.0" mnemonicParsing="false" text="Найти" />
+                <Button fx:id="cancelButton" layoutX="508.0" layoutY="310.0" mnemonicParsing="false" text="Назад" />
+
+
+                <TableView fx:id="resultTableView" layoutX="25.0" layoutY="100.0" prefHeight="200.0" prefWidth="530.0">
+                    <columns>
+
+                        <TableColumn fx:id="typeInventoryColumn" prefWidth="180.0" text="Тип инвентаря" />
+                        <TableColumn fx:id="nameInventoryColumn" prefWidth="180.0" text="Наименование" />
+                        <TableColumn fx:id="inventoryAmountColumn" prefWidth="170.0" text="Количество" />
+
+                    </columns>
+                </TableView>
+            </children></Pane>
+    </children>
+</GridPane>
